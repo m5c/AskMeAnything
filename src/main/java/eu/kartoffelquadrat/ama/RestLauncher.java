@@ -1,3 +1,9 @@
+/**
+ * Main Launcher class for ask me anything service.
+ *
+ * @author Maximilian Schiedermeier
+ */
+
 package eu.kartoffelquadrat.ama;
 
 import org.springframework.boot.SpringApplication;
@@ -8,8 +14,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class RestLauncher {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        SpringApplication.run(RestLauncher.class, args);
-    }
+    SpringApplication.run(RestLauncher.class, args);
+  }
 }
