@@ -1,8 +1,9 @@
 package eu.kartoffelquadrat.ama;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.LinkedHashSet;
+import java.util.Set;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,12 +12,28 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class QuestionController {
 
-  Map<String, String> questions = new LinkedHashMap<>();
+  private final IpBlocker ipBlocker;
+  private final Set<Question> questions = new LinkedHashSet<>();
+
+  public QuestionController(@Autowired IpBlocker ipBlocker) {
+    this.ipBlocker = ipBlocker;
+  }
+
 
   @PostMapping(path = "/ama/questions", consumes = "text/plain")
-  public void askQuestion(@RequestBody String question) {
+  public String askQuestion(@RequestBody String question, HttpServletRequest request) {
+
+    String ip = request.getRemoteAddr();
+    // Log IP and ban for a minute
+    if (ipBlocker.isBlocked(ip)) {
+      System.out.println("BLOCKED!");
+      return "BLOCKED!";
+    }
+
+    ipBlocker.blockForAMinute(ip);
+    questions.add(new Question(request.getRemoteAddr(), question));
     System.out.println(question);
-    questions.put(question, question);
+    return "OK!";
   }
 
   @GetMapping("/ama/questions")
@@ -28,8 +45,8 @@ public class QuestionController {
     }
 
     StringBuilder allQuestions = new StringBuilder("");
-    for (String question : questions.values()) {
-      allQuestions.append(" * ").append(question).append("</br>");
+    for (Question question : questions) {
+      allQuestions.append(question).append("</br>");
     }
     return allQuestions.toString();
   }
