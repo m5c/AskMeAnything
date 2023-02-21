@@ -1,0 +1,88 @@
+@options
+@packages
+-classpath
+'/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.3.0.RELEASE/spring-boot-starter-thymeleaf-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.0.RELEASE/spring-boot-starter-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/boot/spring-boot/2.3.0.RELEASE/spring-boot-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.0.RELEASE/spring-boot-starter-logging-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/schieder/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/schieder/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.2/log4j-to-slf4j-2.13.2.jar:/Users/schieder/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.2/log4j-api-2.13.2.jar:/Users/schieder/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/Users/schieder/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/schieder/.m2/repository/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/spring-jcl/5.2.6.RELEASE/spring-jcl-5.2.6.RELEASE.jar:/Users/schieder/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar:/Users/schieder/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar:/Users/schieder/.m2/repository/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar:/Users/schieder/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/Users/schieder/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/schieder/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/schieder/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.0.RELEASE/spring-boot-starter-web-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.0.RELEASE/spring-boot-starter-json-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/schieder/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/schieder/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/schieder/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.0/jackson-datatype-jdk8-2.11.0.jar:/Users/schieder/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.0/jackson-datatype-jsr310-2.11.0.jar:/Users/schieder/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.0/jackson-module-parameter-names-2.11.0.jar:/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.0.RELEASE/spring-boot-starter-tomcat-2.3.0.RELEASE.jar:/Users/schieder/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.35/tomcat-embed-core-9.0.35.jar:/Users/schieder/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/Users/schieder/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.35/tomcat-embed-websocket-9.0.35.jar:/Users/schieder/.m2/repository/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/spring-beans/5.2.6.RELEASE/spring-beans-5.2.6.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/spring-webmvc/5.2.6.RELEASE/spring-webmvc-5.2.6.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/spring-aop/5.2.6.RELEASE/spring-aop-5.2.6.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE.jar:/Users/schieder/.m2/repository/org/springframework/spring-expression/5.2.6.RELEASE/spring-expression-5.2.6.RELEASE.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'8'
+-sourcepath
+'/Users/schieder/Code/AskMeAnything/src/main/java:/Users/schieder/Code/AskMeAnything/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2023 <a href="https://spring.io">Pivotal Software, Inc.</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/schieder/Code/AskMeAnything/docs'
+-docencoding
+'UTF-8'
+-doctitle
+'AskMeAnything 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/Users/schieder/Code/AskMeAnything/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'AskMeAnything 1.0-SNAPSHOT API'
+eu.kartoffelquadrat.ama
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.3.0.RELEASE/spring-boot-starter-thymeleaf-2.3.0.RELEASE.jar = 1677010121117
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.0.RELEASE/spring-boot-starter-2.3.0.RELEASE.jar = 1675951453582
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot/2.3.0.RELEASE/spring-boot-2.3.0.RELEASE.jar = 1675951454177
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar = 1675951454831
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.0.RELEASE/spring-boot-starter-logging-2.3.0.RELEASE.jar = 1675951453582
+/Users/schieder/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar = 1675951441899
+/Users/schieder/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar = 1675951441558
+/Users/schieder/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.2/log4j-to-slf4j-2.13.2.jar = 1675951453614
+/Users/schieder/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.2/log4j-api-2.13.2.jar = 1675951454044
+/Users/schieder/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar = 1675951454070
+/Users/schieder/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar = 1675794593015
+/Users/schieder/.m2/repository/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar = 1675951454927
+/Users/schieder/.m2/repository/org/springframework/spring-jcl/5.2.6.RELEASE/spring-jcl-5.2.6.RELEASE.jar = 1675951454349
+/Users/schieder/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar = 1675951454762
+/Users/schieder/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar = 1677010121168
+/Users/schieder/.m2/repository/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar = 1677010121206
+/Users/schieder/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar = 1675794591494
+/Users/schieder/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar = 1675794591430
+/Users/schieder/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar = 1675951453552
+/Users/schieder/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar = 1675794591591
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.0.RELEASE/spring-boot-starter-web-2.3.0.RELEASE.jar = 1675951453496
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.0.RELEASE/spring-boot-starter-json-2.3.0.RELEASE.jar = 1675951454318
+/Users/schieder/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar = 1675951455363
+/Users/schieder/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar = 1675951454741
+/Users/schieder/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar = 1675951455795
+/Users/schieder/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.0/jackson-datatype-jdk8-2.11.0.jar = 1675951454928
+/Users/schieder/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.0/jackson-datatype-jsr310-2.11.0.jar = 1675951455009
+/Users/schieder/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.0/jackson-module-parameter-names-2.11.0.jar = 1675951455007
+/Users/schieder/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.0.RELEASE/spring-boot-starter-tomcat-2.3.0.RELEASE.jar = 1675951455036
+/Users/schieder/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.35/tomcat-embed-core-9.0.35.jar = 1675951458069
+/Users/schieder/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar = 1675951455211
+/Users/schieder/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.35/tomcat-embed-websocket-9.0.35.jar = 1675951455746
+/Users/schieder/.m2/repository/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar = 1675951456166
+/Users/schieder/.m2/repository/org/springframework/spring-beans/5.2.6.RELEASE/spring-beans-5.2.6.RELEASE.jar = 1675951456032
+/Users/schieder/.m2/repository/org/springframework/spring-webmvc/5.2.6.RELEASE/spring-webmvc-5.2.6.RELEASE.jar = 1675951457278
+/Users/schieder/.m2/repository/org/springframework/spring-aop/5.2.6.RELEASE/spring-aop-5.2.6.RELEASE.jar = 1675951456816
+/Users/schieder/.m2/repository/org/springframework/spring-context/5.2.6.RELEASE/spring-context-5.2.6.RELEASE.jar = 1675951457022
+/Users/schieder/.m2/repository/org/springframework/spring-expression/5.2.6.RELEASE/spring-expression-5.2.6.RELEASE.jar = 1675951456533
+/Users/schieder/Code/AskMeAnything/src/main/java = 1676397225105
+/Users/schieder/Code/AskMeAnything/target/generated-sources/annotations = 1677010837152
+/Users/schieder/Code/AskMeAnything/docs/constant-values.html = 1677010840139
+/Users/schieder/Code/AskMeAnything/docs/member-search-index.zip = 1677010840176
+/Users/schieder/Code/AskMeAnything/docs/overview-tree.html = 1677010840162
+/Users/schieder/Code/AskMeAnything/docs/index.html = 1677010840195
+/Users/schieder/Code/AskMeAnything/docs/package-search-index.js = 1677010840172
+/Users/schieder/Code/AskMeAnything/docs/package-search-index.zip = 1677010840175
+/Users/schieder/Code/AskMeAnything/docs/type-search-index.zip = 1677010840175
+/Users/schieder/Code/AskMeAnything/docs/index-all.html = 1677010840177
+/Users/schieder/Code/AskMeAnything/docs/allpackages-index.html = 1677010840184
+/Users/schieder/Code/AskMeAnything/docs/deprecated-list.html = 1677010840190
+/Users/schieder/Code/AskMeAnything/docs/member-search-index.js = 1677010840176
+/Users/schieder/Code/AskMeAnything/docs/allclasses.html = 1677010840193
+/Users/schieder/Code/AskMeAnything/docs/script.js = 1677010840204
+/Users/schieder/Code/AskMeAnything/docs/stylesheet.css = 1677010840203
+/Users/schieder/Code/AskMeAnything/docs/help-doc.html = 1677010840200
+/Users/schieder/Code/AskMeAnything/docs/element-list = 1677010840125
+/Users/schieder/Code/AskMeAnything/docs/allclasses-index.html = 1677010840182
+/Users/schieder/Code/AskMeAnything/docs/type-search-index.js = 1677010840175
+/Users/schieder/Code/AskMeAnything/docs/search.js = 1677010840206

@@ -42,6 +42,10 @@
     </licenses>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
 
         <!-- This block adds spring boot as a dependency, so we can use the parent pom configuration and non-standard annotations.-->
         <dependency>

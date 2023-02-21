@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>A.M.A.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+
+        function registerButtons() {
+
+            // Register click handlers
+            console.log("Registering poll submit button");
+            document.getElementById("submitbutton").addEventListener("click", submitPoll)
+
+            // focus on input filed by default
+            document.getElementById("question").focus();
+        }
+
+
+        async function submitPoll() {
+
+            // Get values of input fields:
+            let question = document.getElementById("question").value;
+            console.log(question);
+
+            if (!question) {
+                alert("Question must not be empty!")
+                return;
+            }
+
+            fetch('/ama/questions', {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'text/plain; charset=utf-8'
+                },
+                body: question
+            }).then(reply => reply.text())
+                .then(textreply => {
+                    alert(textreply)
+                });
+        }
+
+    </script>
+</head>
+<body onload="registerButtons()">
+<h1>Ask Me Anything</h1>
+<br>
+<textarea id="question" rows="5" cols="60" name="description">
+Enter question here...
+</textarea>
+<br><br>
+<input type="submit" id="submitbutton" value="Ask Max!">
+
+</body>
+</html>
