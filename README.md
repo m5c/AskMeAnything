@@ -11,9 +11,9 @@ This software allows collectiong anonymous questions of a group while preserving
  * Run with: ```mvn clean package spring-boot:run```
  * Advise participants to submit questions as POST text/plain question-in-payload to /ama/questions.  
 ```bash
-curl -X POST http://127.0.0.1:8080/ama/questions -H "Cont-Type: text/plain; charset=utf-8" -d "What's the answer to lofe, the universe and everything?"
+curl -X POST http://127.0.0.1:8361/ama/questions -H "Content-Type: text/plain; charset=utf-8" -d "What's the answer to life, the universe and everything?"
 ```
- * Look up answers with GET to [http://127.0.0.1:8080/ama/questions](http://127.0.0.1:8080/ama/questions)
+ * Look up answers with GET to [http://127.0.0.1:8361/ama/questions](http://127.0.0.1:8361/ama/questions)
 
 ## MISC
 
