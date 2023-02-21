@@ -52,13 +52,13 @@ public class QuestionController {
     // Log IP and ban for a minute
     if (ipBlocker.isBlocked(ip)) {
       System.out.println("BLOCKED!");
-      return "BLOCKED FOR A MINUTE!\r";
+      return "BLOCKED FOR A MINUTE!";
     }
 
     ipBlocker.blockForOneMinute(ip);
     questions.add(new Question(request.getRemoteAddr(), question));
     System.out.println(question);
-    return "ACCEPTED!\r";
+    return "ACCEPTED!";
   }
 
   /**
