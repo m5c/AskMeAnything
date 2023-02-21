@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Rest Controller definition for AMA service. Allows askeng questions and looking up list of all
  * questions.
  */
-@CrossOrigin
+@CrossOrigin(origins = "*")
 @RestController
 public class QuestionController {
 

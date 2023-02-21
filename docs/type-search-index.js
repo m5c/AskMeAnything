@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"eu.kartoffelquadrat.ama","l":"IpBlocker"},{"p":"eu.kartoffelquadrat.ama","l":"Question"},{"p":"eu.kartoffelquadrat.ama","l":"QuestionController"},{"p":"eu.kartoffelquadrat.ama","l":"RestLauncher"},{"p":"eu.kartoffelquadrat.ama","l":"WebHandler"}]
