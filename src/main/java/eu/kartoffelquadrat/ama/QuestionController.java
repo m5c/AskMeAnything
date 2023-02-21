@@ -41,12 +41,12 @@ public class QuestionController {
    * REST enpoint to ask new questions. A coller can ask at most one question per minute. The IP is
    * blcoked in between.
    *
-   * @param question as the string value of the question asked.
+   * @param rawQuestion as the string value of the question asked.
    * @param request  as the http bundle information on the origin.
    * @return A short status string indicating if request was accepted or rejected.
    */
   @PostMapping(path = "/ama/questions", consumes = "text/plain")
-  public String askQuestion(@RequestBody String question, HttpServletRequest request) {
+  public String askQuestion(@RequestBody String rawQuestion, HttpServletRequest request) {
 
     String ip = request.getRemoteAddr();
     // Log IP and ban for a minute
@@ -56,7 +56,8 @@ public class QuestionController {
     }
 
     ipBlocker.blockForOneMinute(ip);
-    questions.add(new Question(request.getRemoteAddr(), question));
+    Question question = new Question(request.getRemoteAddr(), rawQuestion);
+    questions.add(question);
     System.out.println(question);
     return "ACCEPTED!";
   }
