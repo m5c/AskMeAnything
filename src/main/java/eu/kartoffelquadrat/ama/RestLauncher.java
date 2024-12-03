@@ -11,11 +11,23 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * This class powers up Spring and ensures the annotated controllers are detected.
+ *
+ * @author Maximilian Schiedermeier
  */
 @SpringBootApplication
 public class RestLauncher {
-  public static void main(String[] args) {
+  /**
+   * Default constructor.
+   */
+  public RestLauncher() {
+  }
 
+  /**
+   * Main program starter.
+   *
+   * @param args not used.
+   */
+  public static void main(String[] args) {
     SpringApplication.run(RestLauncher.class, args);
   }
 }

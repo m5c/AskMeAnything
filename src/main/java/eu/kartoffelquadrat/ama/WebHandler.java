@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class WebHandler {
+  /**
+   * Default constructor.
+   */
+  public WebHandler() {
+  }
 
   /**
    * Request mapping to landing page. Returns webUI.
@@ -22,7 +27,6 @@ public class WebHandler {
    */
   @RequestMapping("/")
   public String forwardToLanding() {
-
     return "ask";
   }
 }

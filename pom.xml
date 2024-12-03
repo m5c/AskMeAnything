@@ -10,16 +10,15 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <source>8</source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>21</maven.compiler.release>
     </properties>
 
     <!-- this parent block lets this maven project extend a prepared spring specific template.-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
+        <version>3.4.0</version>
     </parent>
 
     <!-- main developer -->
@@ -45,14 +44,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>3.4.0</version>
         </dependency>
+
 
         <!-- This block adds spring boot as a dependency, so we can use the parent pom configuration and non-standard annotations.-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.3.0.RELEASE</version>
+            <version>3.4.0</version>
         </dependency>
+
 
         <!--        <dependency>-->
         <!--            <groupId>org.springdoc</groupId>-->
@@ -63,7 +65,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -73,16 +75,6 @@
         <finalName>AskMeAnything</finalName>
 
         <plugins>
-            <!-- set compiler version -->
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-
             <!-- enforce passing junit tests as build precondition -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -105,31 +97,6 @@
                 </executions>
             </plugin>
 
-            <!-- add docs -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.4.0</version>
-                <configuration>
-                    <source>8</source>
-                    <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-                    <reportOutputDirectory>${project.reporting.outputDirectory}/docs
-                    </reportOutputDirectory>
-                    <destDir>docs</destDir>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <failOnWarnings>true</failOnWarnings>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
 
             <!-- Spring specific build plugin, produces self-contained JAR with default launcher class.-->
             <plugin>
@@ -143,6 +110,28 @@
                     <execution>
                         <goals>
                             <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Enforce Javadoc-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+                    <reportOutputDirectory>${project.reporting.outputDirectory}/docs
+                    </reportOutputDirectory>
+                    <failOnWarnings>true</failOnWarnings>
+                    <quiet>true</quiet>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
